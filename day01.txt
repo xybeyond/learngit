@@ -20,3 +20,6 @@ $ export LESSCHARSET=utf-8                          #在git安装目录改的  <
 #git diff --cached：是查看index file与commit的差别的。
 #git diff HEAD：是查看work tree和commit的差别的。（你一定没有忘记，HEAD代表的是最近的一次commit的信息
 
+
+#问题4：git commit 已下载将所有修改文件提交，假如我后悔了，我想回复其中的一个文件，应该怎么办？
+
