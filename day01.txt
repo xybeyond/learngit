@@ -11,5 +11,12 @@ $ git config --global i18n.logoutputencoding utf-8  # 输出 log 编码     <--�
 $ export LESSCHARSET=utf-8                          #在git安装目录改的  <--使用
 
 
+#问题3：我提交了文件后，使用commit 命令怎么毫无反应呢？
+#解答：没有理解git diff对比的对象是什么？并不是前后两个已经commit的文件对比
+#       git diff --cached
+#       git diff --staged
+#    work tree --add--  index tree  --commit-- commit tree
+#git diff：是查看work tree与index file的差别的。
+#git diff --cached：是查看index file与commit的差别的。
+#git diff HEAD：是查看work tree和commit的差别的。（你一定没有忘记，HEAD代表的是最近的一次commit的信息
 
-first day: begin use git and github to record my work
