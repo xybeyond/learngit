@@ -1,5 +1,15 @@
+#问题1:提交的时候无法输入中文，在bash界面调出输入法，回车后在bash界面无法显示中文
+#解决方法是：bash ——>点左上角-->text --> 在最后一行修改系统设置-->一个是zh_CN 一个是utf-8
+
+
+#问题2：提交文件时写说明写的中文，使用git log 无法正常显示，从网上找的解决方案
+#解决方法：
+$ git config --global core.quotepath false          # 显示 status 编码  <--使用
+$ git config --global gui.encoding utf-8            # 图形界面编码      <--未使用
+$ git config --global i18n.commit.encoding utf-8    # 提交信息编码      <--使用
+$ git config --global i18n.logoutputencoding utf-8  # 输出 log 编码     <--使用
+$ export LESSCHARSET=utf-8                          #在git安装目录改的  <--使用
+
+
+
 first day: begin use git and github to record my work
-
-哈哈
-
-嘿嘿
