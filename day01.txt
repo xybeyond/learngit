@@ -23,3 +23,7 @@ $ export LESSCHARSET=utf-8                          #在git安装目录改的  <
 
 #问题4：git commit 已下载将所有修改文件提交，假如我后悔了，我想回复其中的一个文件，应该怎么办？
 #解决方法是：git reset commit_id 文件路径，然后再用checkout 然后文件就由暂存区回到了工作区
+
+
+
+#发现一个很好的git learn by doing 网站，https://try.github.io/levels/1/challenges/2
