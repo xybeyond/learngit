@@ -37,4 +37,8 @@ $ export LESSCHARSET=utf-8                          #在git安装目录改的  <
 
 问题解答：
 1.git默认不区分大小写的，所以需要设置才能区分大小写：git config core.ignorecase false
-2.git 删除文件的时候需要用到git rm 命令然后commit才有用，使用add 似乎没有用？ 
+2.git 删除文件的时候需要用到git rm 命令然后commit才有用，使用add 似乎没有用？
+
+
+#问题6 每次push都需要输入用户邮箱和密码。是因为使用的是https协议，需要改成ssh协议就可以了，我嫌麻烦先这样吧
+ 
