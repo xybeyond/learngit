@@ -27,3 +27,14 @@ $ export LESSCHARSET=utf-8                          #在git安装目录改的  <
 
 
 #发现一个很好的git learn by doing 网站，https://try.github.io/levels/1/challenges/2
+
+
+#遇见一个问题，在本地建立一个项目，里面的readme文件死活在github上乱码，我怀疑应该是文件名的格式导致的，因为最初
+#设置成readme.md一点问题就没有，然后就改成README.md没用，恰恰这里出问题了
+#首先，发现本地把文件名已改，系统认为你删除了东西然后让你rm，我没有这样，直接push，发现每个目录下都活脱脱增加了一个
+#文件，原来的文件还在，然后就线rm commit然后再push然后多的文件没有了，可是又遇见一个问题，我改了一个文件，然后又改了，系统始终提示
+#又更改，需要提交，提交了然后ok，可以等我将所有文件都修改成readme.md然后 git stauts时，系统没有提示有改变。。。是为什么?
+
+问题解答：
+1.git默认不区分大小写的，所以需要设置才能区分大小写：git config core.ignorecase false
+2.git 删除文件的时候需要用到git rm 命令然后commit才有用，使用add 似乎没有用？ 
